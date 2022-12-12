@@ -26,8 +26,13 @@ while opc != 0:
     vuelto1 = input("Proceda a cancelar ")
     v1= int(vuelto1)
     monto1 = v1 - total1
-    print ("Vuelto: ", monto1)
-    break 
+    if monto1 >= 0:
+      print ("Vuelto: ", monto1)
+      print ("\nHasta pronto. Muchas gracias por su compra :) ")
+      break 
+    else: 
+      print ("Monto de pago no válido")
+      break
     #-----------------------------------------------------------------------
   elif opc == 2:
     print("Escogiste pollo a la braza \n")
@@ -39,8 +44,13 @@ while opc != 0:
     vuelto2 = input("Proceda a cancelar ")
     v2= int(vuelto2)
     monto2 = v2 - total2
-    print ("Vuelto: ", monto2)
-    break     
+    if monto2 >= 0:
+      print ("Vuelto: ", monto2)
+      print ("\nHasta pronto. Muchas gracias por su compra :) ")
+      break 
+    else: 
+      print ("Monto de pago no válido")
+      break 
 #-----------------------------------------------------------------------
   elif opc == 3:
    print("Escogiste un deliciosos chaufa \n")
@@ -52,19 +62,28 @@ while opc != 0:
    vuelto3 = input("Proceda a cancelar ")
    v3= int(vuelto3)
    monto3 = v3 - total3
-   print ("Vuelto: ", monto3)
-   break   
+   if monto3 >= 0:
+      print ("Vuelto: ", monto3)
+      print ("\nHasta pronto. Muchas gracias por su compra :) ")
+      break 
+   else:
+      print ("Monto de pago no válido")
+      break
   elif opc == 4:
    platos_4 = input("Ingrese la cantidad de platos: " )
-   p4 = int(platos_3 ) 
+   p4 = int(platos_4 ) 
    ceviche = 18
    total4 = p4 * ceviche
    print(total4)
    vuelto4 = input("Proceda a cancelar ")
    v4= int(vuelto4)
    monto4 = v4 - total4
-   print ("Vuelto: ", monto4)
-   break   
+   if monto4 >=0:
+     print ("Vuelto: ", monto4)
+     break
+   else: 
+     print ("\n Monto no válido")
+     break
 #...........................
   elif opc == 0: 
     print ("Hasta pronto")
@@ -76,5 +95,5 @@ while opc != 0:
       "Escoge uno de nuestros apetitosos platillos : \n -------------------- \n 0.Salir del menú \n 1: Arroz con pollo ---------------- s/18.00 \n 2. Pollo a la brasa --------------- s/25.00 \n 3: Chaufa ------------------------- s/14.00 \n 4: Ceviche ------------------------ s/18.00 \n  "
     ))
 #------fin del bucle----------------------------------------#
-print ("\n Hasta pronto. Muchas gracias por su compra :) ")
+
 
